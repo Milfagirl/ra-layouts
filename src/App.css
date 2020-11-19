@@ -1,38 +1,97 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.IconSwitch {
+    text-align: right;
+}
+
+.view_module {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+}
+
+.ShopCard img {
+    width: 100%;
+
+}
+
+.ShopCard {
+    border: 1px solid ghostwhite;
+    background-color: ghostwhite;
+    border-radius: 10px 10px;
+    position: relative;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.ShopCard .name {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.ShopCard .colored {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.ShopCardFooter {
+    position: absolute;
+    bottom: 10%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    color: red;
+}
+
+.ShopCardFooter .btn {
+    color: red;
+    border-radius: 15px 15px;
+    border: 1px solid red;
+    background-color: rgba(249, 250, 248, 0.01);
+}
+
+.ShopItem {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    vertical-align: center;
+    align-items: center;
+    background-color: #f3f3f1;
+    padding: 0 10px;
+}
+
+.ShopItem img {
+    height: 100%;
+    width: 80px;
+
+}
+
 .App {
-  text-align: center;
+    padding: 0 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ShopItem .price {
+    color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ShopItem .btn {
+    color: red;
+    border-radius: 15px 15px;
+    border: 1px solid red;
+    background-color: rgba(243, 243, 241, 0.01);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
